@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+    <div class="form-container">
+        <h1>Student Feedback</h1>
+        <form action="submit.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <input type="number" name="rating" placeholder="Rating (1-5)" min="1" max="5" required>
+            <textarea name="comments" placeholder="Your Comments" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <a class="view-link" href="view.php">View All Feedback</a>
+    </div>
+    <script src="bg.js"></script>
+</body>
+</html>
